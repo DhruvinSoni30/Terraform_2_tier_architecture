@@ -1,0 +1,10 @@
+variable "ami_id" {}
+variable "instance_type" {}
+variable "subnet_id_az1" {}
+variable "security_group" {}
+variable "subnet_id_az2" {}
+variable "security_group_db" {}
+variable "db_name" {}
+variable "subnet_db_1" {}
+variable "subnet_db_2" {}
+variable "project_name" {}
