@@ -71,5 +71,7 @@ fp.close()
 if len(errors) > 0:
     for error in errors:
         print(error)
+    exit(1)
+
 else:
     print("All the check passed!")
