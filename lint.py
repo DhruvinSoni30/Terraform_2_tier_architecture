@@ -66,7 +66,7 @@ for f in file:
         if db_name_validator.search(db_name) is None:
             errors.append("Invalid DB name, Special characters are not allowed")
 
-#fp.close()
+fp.close()
 
 if len(errors) > 0:
     for error in errors:
