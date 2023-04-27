@@ -35,7 +35,7 @@ jobs:
       - name: lint
         run: |
           cp lint.py dev/
-          python3 lint.py
+          python lint.py
           working-directory: ./dev
       
       - name: Terraform formate
