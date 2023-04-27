@@ -32,12 +32,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyhcl
           
-      - name: lint
+      - name: copy script
         run: |
           cp lint.py dev/
+      
+      - name: lint
+        run: |
           python lint.py
           working-directory: ./dev
-      
+
       - name: Terraform formate
         id: formate
         run: |
